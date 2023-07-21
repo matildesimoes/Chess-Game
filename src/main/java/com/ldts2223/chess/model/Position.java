@@ -1,5 +1,7 @@
 package com.ldts2223.chess.model;
 
+import java.util.Objects;
+
 public class Position {
 
     private int x;
@@ -29,8 +31,17 @@ public class Position {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Position position = (Position) o;
-        return this.x == position.getX() && this.y == position.getY();
+        if (!(o instanceof Position position)) return false;
+        boolean x = this.getX() == position.getX();
+        return  x && this.getY() == position.getY();
+    }
+
+    public Position clone(){
+        return new Position(x, y);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
     }
 }

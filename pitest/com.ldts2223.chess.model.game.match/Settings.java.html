@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Settings.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.ldts2223.chess.model.game.match;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.gamemode.Explosive;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.gamemode.GameMode;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.gamemode.Traditional;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Arrays;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Settings {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private Integer time = 600;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private List&#60;String&#62; whitePlayer = Arrays.asList(&#34;User&#34;, &#34;Easy Bot&#34;, &#34;Medium Bot&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int whitePlayerIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private List&#60;String&#62; blackPlayer = Arrays.asList(&#34;User&#34;, &#34;Easy Bot&#34;, &#34;Medium Bot&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int blackPlayerIndex = 2;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private List&#60;GameMode&#62; gamemode = Arrays.asList(new Traditional(), new Explosive());</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int gamemodeIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int decreaseX = 9;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int increaseX = 22;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int entryY = 6;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private String backEntry = &#34;Back to Menu&#34;;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int backY = 13;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private int backX = 4;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private static Settings instance = null;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private Settings(){}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static Settings getInstance(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_30'>1</a>
+<span>
+
+1. getInstance : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (Settings.instance == null)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            instance = new Settings();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_32'/>
+32
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_32'>1</a>
+<span>
+
+1. getInstance : replaced return value with null for com/ldts2223/chess/model/game/match/Settings::getInstance &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Settings.instance;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getBackX() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_36'/>
+36
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_36'>1</a>
+<span>
+
+1. getBackX : replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getBackX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return backX;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_39'/>
+39
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_39'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getBackY() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_40'/>
+40
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_40'>1</a>
+<span>
+
+1. getBackY : replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getBackY &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return backY;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String getBackEntry() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_44'>1</a>
+<span>
+
+1. getBackEntry : replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getBackEntry &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return backEntry;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getEntryY() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_48'>1</a>
+<span>
+
+1. getEntryY : replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getEntryY &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return entryY;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getIncreaseX() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_52'/>
+52
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_52'>1</a>
+<span>
+
+1. getIncreaseX : replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getIncreaseX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return increaseX;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int getDecreaseX() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_56'/>
+56
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_56'>1</a>
+<span>
+
+1. getDecreaseX : replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getDecreaseX &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return decreaseX;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String getWhitePlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_60'/>
+60
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_60'>1</a>
+<span>
+
+1. getWhitePlayer : replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getWhitePlayer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return whitePlayer.get(whitePlayerIndex);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String getBlackPlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_64'/>
+64
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_64'>1</a>
+<span>
+
+1. getBlackPlayer : replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getBlackPlayer &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return blackPlayer.get(blackPlayerIndex);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_67'/>
+67
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_67'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public GameMode getGamemode() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_68'/>
+68
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_68'>1</a>
+<span>
+
+1. getGamemode : replaced return value with null for com/ldts2223/chess/model/game/match/Settings::getGamemode &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return gamemode.get(gamemodeIndex);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public long getTime() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_72'/>
+72
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_72'>1</a>
+<span>
+
+1. getTime : replaced long return with 0 for com/ldts2223/chess/model/game/match/Settings::getTime &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return time;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void reset(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        whitePlayerIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        blackPlayerIndex = 2;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        time = 600;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_79'/>
+79
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_79'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        gamemodeIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void incrementWhitePlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_83'/>
+83
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_83'>1</a>
+<span>
+
+1. incrementWhitePlayer : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        whitePlayerIndex++;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_84'/>
+84
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_84'>2</a>
+<span>
+
+1. incrementWhitePlayer : changed conditional boundary &rarr; KILLED<br/>
+
+2. incrementWhitePlayer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (whitePlayerIndex &#62;= whitePlayer.size())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            whitePlayerIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_88'/>
+88
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_88'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void decrementWhitePlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_89'/>
+89
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_89'>1</a>
+<span>
+
+1. decrementWhitePlayer : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        whitePlayerIndex--;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_90'>2</a>
+<span>
+
+1. decrementWhitePlayer : changed conditional boundary &rarr; KILLED<br/>
+
+2. decrementWhitePlayer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (whitePlayerIndex &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_91'>1</a>
+<span>
+
+1. decrementWhitePlayer : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            whitePlayerIndex = whitePlayer.size() - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void incrementBlackPlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_95'/>
+95
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_95'>1</a>
+<span>
+
+1. incrementBlackPlayer : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        blackPlayerIndex++;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_96'/>
+96
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_96'>2</a>
+<span>
+
+1. incrementBlackPlayer : changed conditional boundary &rarr; KILLED<br/>
+
+2. incrementBlackPlayer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (blackPlayerIndex &#62;= blackPlayer.size())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            blackPlayerIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void decrementBlackPlayer(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_101'/>
+101
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_101'>1</a>
+<span>
+
+1. decrementBlackPlayer : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        blackPlayerIndex--;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_102'/>
+102
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_102'>2</a>
+<span>
+
+1. decrementBlackPlayer : changed conditional boundary &rarr; KILLED<br/>
+
+2. decrementBlackPlayer : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (blackPlayerIndex &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_103'/>
+103
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_103'>1</a>
+<span>
+
+1. decrementBlackPlayer : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            blackPlayerIndex = blackPlayer.size() - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_104'/>
+104
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_104'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_105'/>
+105
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_105'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_106'/>
+106
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_106'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void incrementGamemode(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_107'/>
+107
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_107'>1</a>
+<span>
+
+1. incrementGamemode : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        gamemodeIndex++;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_108'/>
+108
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_108'>2</a>
+<span>
+
+1. incrementGamemode : changed conditional boundary &rarr; KILLED<br/>
+
+2. incrementGamemode : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (gamemodeIndex &#62;= gamemode.size())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_109'/>
+109
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_109'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            gamemodeIndex = 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_110'/>
+110
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_110'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_111'/>
+111
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_111'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_112'/>
+112
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_112'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void decrementGamemode(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_113'/>
+113
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_113'>1</a>
+<span>
+
+1. decrementGamemode : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        gamemodeIndex--;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_114'/>
+114
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_114'>2</a>
+<span>
+
+1. decrementGamemode : changed conditional boundary &rarr; KILLED<br/>
+
+2. decrementGamemode : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (gamemodeIndex &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_115'/>
+115
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_115'>1</a>
+<span>
+
+1. decrementGamemode : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            gamemodeIndex = gamemode.size() - 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_116'/>
+116
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_116'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_117'/>
+117
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_117'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_118'/>
+118
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_118'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void increaseTime(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_119'/>
+119
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_119'>3</a>
+<span>
+
+1. increaseTime : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. increaseTime : Replaced integer addition with subtraction &rarr; SURVIVED<br/>
+
+3. increaseTime : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (time + 30 &#60; (99 * 60 + 59))</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_120'/>
+120
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_120'>1</a>
+<span>
+
+1. increaseTime : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            time += 30;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_121'/>
+121
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_121'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_122'/>
+122
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_122'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void decreaseTime(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_123'/>
+123
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_123'>2</a>
+<span>
+
+1. decreaseTime : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. decreaseTime : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (time &#62; 30 )</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_124'/>
+124
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_124'>1</a>
+<span>
+
+1. decreaseTime : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            time -= 30;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_125'/>
+125
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_125'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@3a4e524_126'/>
+126
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_126'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getInstance<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:getInstance()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_32'>32</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_32'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getInstance<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:getInstance()]</span></span> replaced return value with null for com/ldts2223/chess/model/game/match/Settings::getInstance &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_36'>36</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_36'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBackX<br/><b>Killed by : </b>com.ldts2223.chess.viewer.settings.SettingsViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.settings.SettingsViewerTest]/[method:drawElements()]</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getBackX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_40'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBackY<br/><b>Killed by : </b>com.ldts2223.chess.viewer.settings.SettingsViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.settings.SettingsViewerTest]/[method:drawElements()]</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getBackY &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBackEntry<br/><b>Killed by : </b>com.ldts2223.chess.viewer.settings.SettingsViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.settings.SettingsViewerTest]/[method:drawElements()]</span></span> replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getBackEntry &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getEntryY<br/><b>Killed by : </b>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decreaseTime()]</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getEntryY &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_52'>52</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_52'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getIncreaseX<br/><b>Killed by : </b>com.ldts2223.chess.viewer.settings.SettingsViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.settings.SettingsViewerTest]/[method:drawElements()]</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getIncreaseX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_56'>56</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_56'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getDecreaseX<br/><b>Killed by : </b>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decreaseTime()]</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/Settings::getDecreaseX &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_60'>60</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_60'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementWhitePlayer()]</span></span> replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getWhitePlayer &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_64'>64</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_64'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()]</span></span> replaced return value with &#34;&#34; for com/ldts2223/chess/model/game/match/Settings::getBlackPlayer &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_68'>68</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_68'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> replaced return value with null for com/ldts2223/chess/model/game/match/Settings::getGamemode &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_72'>72</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_72'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getTime<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()]</span></span> replaced long return with 0 for com/ldts2223/chess/model/game/match/Settings::getTime &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_83'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementWhitePlayer()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_84'>84</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_84'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementWhitePlayer()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>incrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementWhitePlayer()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementWhitePlayer()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementWhitePlayer()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>decrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementWhitePlayer()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementWhitePlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementWhitePlayer()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_95'>95</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_95'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementBlackPlayer()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_96'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementBlackPlayer()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>incrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementBlackPlayer()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_101'>101</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_101'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_102'>102</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_102'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>decrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_103'>103</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_103'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementBlackPlayer<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_107'>107</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_107'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_108'>108</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_108'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>incrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>incrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_113'>113</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_113'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_114'>114</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_114'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>decrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_115'>115</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_115'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decrementGamemode<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_119'>119</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_119'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>increaseTime<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>increaseTime<br/><b>Killed by : </b>none</span></span> Replaced integer addition with subtraction &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>increaseTime<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_120'>120</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_120'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>increaseTime<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()]</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_123'>123</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_123'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decreaseTime<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>decreaseTime<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@3a4e524_124'>124</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@3a4e524_124'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>decreaseTime<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()]</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultHorseMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultHorseMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultRookMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultRookMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.controller.MenuControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MenuControllerTest]/[method:playAgain()] (45 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:buildTraditional()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getIdlePlayer()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CaptureTest]/[method:execute()] (1 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decreaseTime()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementBlackPlayer()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementWhitePlayer()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getPieceIn()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultBishopMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultBishopMovementTest]/[method:testGetPossiblePlays()] (1 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decrementWhitePLayer()] (3 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decrementBlackPLayer()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:avoidCheckTrue()] (44 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:check()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isAlive()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isCheckMateFalse()] (29 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isBlackCheckmate()] (90 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:quitTest()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getPlayIn()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultKingMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultKingMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:quitEsc()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:switchTurn()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:avoidCheckFalse()] (3 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:decrementGameMode()] (57 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:emptyPlays()] (1 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:increaseTime()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:incrementGameMode()] (2 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:incrementWhitePLayer()] (4 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isBlackTimeOver()] (86 ms)</li><li>com.ldts2223.chess.model.game.match.plays.EnPassantTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.EnPassantTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:filterCheckPlays()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:getInstance()] (1 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isWhiteCheckmate()] (81 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:gameMode()] (0 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:goBack()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getActivePlayer()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest]/[method:testGetPossiblePlays()] (1 ms)</li><li>com.ldts2223.chess.viewer.settings.SettingsViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.settings.SettingsViewerTest]/[method:drawElements()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:selectPiece()] (5 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isCheckMateTrue()] (26 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isWhiteTimeOver()] (94 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:time()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CastlingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CastlingTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:cloneTest()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isStaleMateTrue()] (23 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isStaleMateFalse()] (45 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:incrementBlackPlayer()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.SettingsTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.SettingsTest]/[method:decrementWhitePlayer()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isTimeOver()] (1 ms)</li><li>com.ldts2223.chess.controller.PlayerControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.PlayerControllerTest]/[method:step()] (41 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:buildExplosive()] (1 ms)</li><li>com.ldts2223.chess.viewer.match.MatchViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.match.MatchViewerTest]/[method:drawElements()] (7 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.RuleEngineTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.RuleEngineTest]/[method:getPossiblePlays()] (5 ms)</li><li>com.ldts2223.chess.controller.MenuControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MenuControllerTest]/[method:settings()] (2 ms)</li><li>com.ldts2223.chess.controller.SettingsControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.SettingsControllerTest]/[method:incrementBlackPLayer()] (2 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isStaleMate()] (953 ms)</li><li>com.ldts2223.chess.controller.MenuControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MenuControllerTest]/[method:start()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:testTime()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:testPlayerTypes()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.MoveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.MoveTest]/[method:execute()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.4
+
+</body>
+</html>

@@ -1,33 +1,31 @@
 package com.ldts2223.chess.model.game.match;
 
-import com.ldts2223.chess.model.Position;
-
 import java.util.Objects;
 
 public class Board {
 
-    private int width;
-    private int height;
+    private int size;
+    private final int squareSize = 1;
+    private final int boardStart = 2;
 
-    public Board(int width, int height){
-        this.width = width;
-        this.height = height;
+    public Board(int size){
+        this.size = size;
     }
 
-    public int getHeight() {
-        return height;
+    public int getSize() {
+        return size;
     }
 
-    public int getWidth() {
-        return width;
+    public void setSize(int i) {
+        this.size = i;
     }
 
-    public void setHeight(int height) {
-        this.height = height;
+    public int getSquareSize() {
+        return squareSize;
     }
 
-    public void setWidth(int width) {
-        this.width = width;
+    public int getBoardStart() {
+        return boardStart;
     }
 
     @Override
@@ -35,11 +33,15 @@ public class Board {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Board board = (Board) o;
-        return this.width == board.getWidth() && this.height == board.getHeight();
+        return this.size == board.getSize();
     }
 
     @Override
     public int hashCode() {
-       return Objects.hash(width, height);
+       return Objects.hash(size);
+    }
+
+    public Board clone(){
+        return new Board(size);
     }
 }

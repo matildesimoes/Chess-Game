@@ -1,11 +1,10 @@
 package com.ldts2223.chess.controller;
 
 import com.ldts2223.chess.Game;
-import com.ldts2223.chess.gui.GUI;
-
-import java.io.IOException;
+import com.ldts2223.chess.gui.Input;
 
 public abstract class Controller<T> {
+
     private final T model;
 
     public Controller(T model) {
@@ -16,5 +15,5 @@ public abstract class Controller<T> {
         return model;
     }
 
-    //public abstract void step(Main main, GUI.ACTION action, long time) throws IOException;
+    abstract public void step(Game game, Input input, long time) throws InterruptedException;
 }

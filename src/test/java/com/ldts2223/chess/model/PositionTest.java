@@ -13,6 +13,7 @@ public class PositionTest {
     void helper(){
         position = new Position(10, 20 );
     }
+
     @Test
     void getX(){
         assertEquals(10, position.getX());
@@ -34,5 +35,4 @@ public class PositionTest {
         position.setY(25);
         assertEquals(25, position.getY());
     }
-
 }

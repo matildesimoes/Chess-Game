@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=windows-1252">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Piece.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.ldts2223.chess.model.game.match.pieces;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.Position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.Match;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.pieces.ruleEngine.RuleEngine;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import com.ldts2223.chess.model.game.match.plays.Play;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.HashSet;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Objects;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public abstract class Piece {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Character image;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private Position position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean isWhite;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private boolean isSelected;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private RuleEngine ruleEngine;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    private boolean hasMoved = false;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Piece(Position position, boolean isWhite){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.position = position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.isWhite = isWhite;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public RuleEngine getRuleEngine() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_26'/>
+26
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_26'>1</a>
+<span>
+
+1. getRuleEngine : replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getRuleEngine &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return ruleEngine;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setRuleEngine(RuleEngine ruleEngine) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.ruleEngine = ruleEngine;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean hasMoved() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_34'>2</a>
+<span>
+
+1. hasMoved : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::hasMoved &rarr; SURVIVED<br/>
+
+2. hasMoved : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::hasMoved &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return hasMoved;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean setHasMoved(boolean hasMove) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.hasMoved = hasMove;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_39'/>
+39
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_39'>2</a>
+<span>
+
+1. setHasMoved : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::setHasMoved &rarr; SURVIVED<br/>
+
+2. setHasMoved : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::setHasMoved &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return hasMove;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Character getImage(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_43'>1</a>
+<span>
+
+1. getImage : replaced Character return value with 0 for com/ldts2223/chess/model/game/match/pieces/Piece::getImage &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return image;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setImage(Character image) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.image = image;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Position getPosition() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_51'/>
+51
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_51'>1</a>
+<span>
+
+1. getPosition : replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getPosition &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return position;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void setPosition(Position position) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.position = position;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean getColor(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_59'>2</a>
+<span>
+
+1. getColor : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::getColor &rarr; KILLED<br/>
+
+2. getColor : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::getColor &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return isWhite;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isWhite(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_63'/>
+63
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_63'>2</a>
+<span>
+
+1. isWhite : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::isWhite &rarr; KILLED<br/>
+
+2. isWhite : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isWhite &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return isWhite;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_65'/>
+65
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_65'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_66'/>
+66
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_66'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isBlack(){</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_67'/>
+67
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_67'>2</a>
+<span>
+
+1. isBlack : negated conditional &rarr; NO_COVERAGE<br/>
+
+2. isBlack : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isBlack &rarr; NO_COVERAGE<br/>
+
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class='survived'>        return !isWhite;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_68'/>
+68
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_68'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_69'/>
+69
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_69'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_70'/>
+70
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_70'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void select(){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_71'/>
+71
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_71'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        isSelected = true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_72'/>
+72
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_72'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_73'/>
+73
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_73'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_74'/>
+74
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_74'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public void unselect(){</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_75'/>
+75
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_75'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        isSelected = false;</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_76'/>
+76
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_76'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_77'/>
+77
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_77'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_78'/>
+78
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_78'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean isSelected() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_79'/>
+79
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_79'>2</a>
+<span>
+
+1. isSelected : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isSelected &rarr; SURVIVED<br/>
+
+2. isSelected : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::isSelected &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return isSelected;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_80'/>
+80
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_80'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_81'/>
+81
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_81'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_82'/>
+82
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_82'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public HashSet&#60;Play&#62; getPossiblePlays(Match match){</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_83'/>
+83
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_83'>1</a>
+<span>
+
+1. getPossiblePlays : replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getPossiblePlays &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return ruleEngine.getPossiblePlays(match, this);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_84'/>
+84
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_84'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_85'/>
+85
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_85'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_86'/>
+86
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_86'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_87'/>
+87
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_87'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean equals(Object o) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_88'/>
+88
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_88'>2</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+2. equals : replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (this == o) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_89'/>
+89
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_89'>2</a>
+<span>
+
+1. equals : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; NO_COVERAGE<br/>
+
+2. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        if (!(o instanceof Piece piece)) return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_90'/>
+90
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_90'>3</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+2. equals : negated conditional &rarr; KILLED<br/>
+
+3. equals : replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return isWhite() == piece.isWhite() &#38;&#38; isSelected() == piece.isSelected() &#38;&#38;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_91'/>
+91
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_91'>2</a>
+<span>
+
+1. equals : negated conditional &rarr; KILLED<br/>
+
+2. equals : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                getImage().equals(piece.getImage()) &#38;&#38; getPosition().equals(piece.getPosition());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_92'/>
+92
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_92'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_93'/>
+93
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_93'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_94'/>
+94
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_94'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_95'/>
+95
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_95'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int hashCode() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_96'/>
+96
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_96'>1</a>
+<span>
+
+1. hashCode : replaced int return with 0 for com/ldts2223/chess/model/game/match/pieces/Piece::hashCode &rarr; SURVIVED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>        return Objects.hash(getImage(), getPosition(), isWhite(), isSelected());</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_97'/>
+97
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_97'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_98'/>
+98
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_98'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_99'/>
+99
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_99'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    abstract public Piece clone();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@23648d2d_100'/>
+100
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_100'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_26'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getRuleEngine<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:cloneTest()]</span></span> replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getRuleEngine &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_34'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hasMoved<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.plays.CastlingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CastlingTest]/[method:execute()]</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::hasMoved &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>hasMoved<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::hasMoved &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_39'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>setHasMoved<br/><b>Killed by : </b>none</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::setHasMoved &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>setHasMoved<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::setHasMoved &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getImage<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:getImage()]</span></span> replaced Character return value with 0 for com/ldts2223/chess/model/game/match/pieces/Piece::getImage &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_51'>51</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_51'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPosition<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getPosition &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getColor<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest]/[method:testGetPossiblePlays()]</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::getColor &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>getColor<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest]/[method:testGetPossiblePlays()]</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::getColor &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_63'>63</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_63'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isWhite<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::isWhite &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isWhite<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isWhite &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_67'>67</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_67'/> 
+
+<p class='NO_COVERAGE'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isBlack<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; NO_COVERAGE</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isBlack<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isBlack &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_79'>79</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_79'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>isSelected<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:selectPiece()]</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::isSelected &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>isSelected<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::isSelected &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_83'>83</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_83'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPossiblePlays<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isStaleMateTrue()]</span></span> replaced return value with null for com/ldts2223/chess/model/game/match/pieces/Piece::getPossiblePlays &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_88'>88</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_88'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.plays.PlayTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PlayTest]/[method:setAndGetSelectedPiece()]</span></span> replaced boolean return with false for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_89'>89</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_89'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> <p class='NO_COVERAGE'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>none</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; NO_COVERAGE</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_90'>90</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_90'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> replaced boolean return with true for com/ldts2223/chess/model/game/match/pieces/Piece::equals &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_91'>91</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_91'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@23648d2d_96'>96</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@23648d2d_96'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>none</span></span> replaced int return with 0 for com/ldts2223/chess/model/game/match/pieces/Piece::hashCode &rarr; SURVIVED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.ldts2223.chess.controller.MenuControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MenuControllerTest]/[method:playAgain()] (45 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:buildTraditional()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getIdlePlayer()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.player.bot.RandomBotTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.bot.RandomBotTest]/[method:testClone()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getPieceIn()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.QueenTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.QueenTest]/[method:getImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.MoveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.MoveTest]/[method:testMoveWithoutPromotion()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.player.PlayerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.PlayerTest]/[method:testAddPiece()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.KingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.KingTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CastlingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CastlingTest]/[method:testConstructor()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.KingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.KingTest]/[method:constructorTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isAlive()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isCheckMateFalse()] (29 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isBlackCheckmate()] (90 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultKingMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultKingMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:quitTest()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:switchTurn()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.QueenTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.QueenTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.player.PlayerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.PlayerTest]/[method:testLosePiece()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:avoidCheckFalse()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PromotionTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PromotionTest]/[method:testEquals()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.gamemode.TraditionalTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.gamemode.TraditionalTest]/[method:load()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:emptyPlays()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.EnPassantTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.EnPassantTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:filterCheckPlays()] (1 ms)</li><li>com.ldts2223.chess.viewer.match.PlayViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.match.PlayViewerTest]/[method:drawMove()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.player.bot.RandomBotTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.bot.RandomBotTest]/[method:selectPlay()] (1 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isWhiteCheckmate()] (81 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PromotionTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PromotionTest]/[method:testHashCode()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:selectPiece()] (5 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isCheckMateTrue()] (26 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isWhiteTimeOver()] (94 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.QueenTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.QueenTest]/[method:constructorTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.player.PlayerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.PlayerTest]/[method:testEquals()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CaptureTest]/[method:testClone()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isStaleMateTrue()] (23 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isStaleMateFalse()] (45 ms)</li><li>com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest]/[method:testClone()] (19 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PlayTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PlayTest]/[method:setAndGetSelectedPiece()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:isTimeOver()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.KingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.KingTest]/[method:getImage()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.player.PlayerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.PlayerTest]/[method:testSetKing()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest]/[method:testConstructor()] (1 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isStaleMate()] (953 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.RookTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.RookTest]/[method:getImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.HorseTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.HorseTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest]/[method:selectPriorityPlay()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.RookTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.RookTest]/[method:cloneTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:testTime()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:cloneTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultHorseMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultHorseMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultRookMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultRookMovementTest]/[method:testGetPossiblePlays()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CaptureTest]/[method:execute()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PromotionTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PromotionTest]/[method:testConstructor()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultBishopMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultBishopMovementTest]/[method:testGetPossiblePlays()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.EnPassantTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.EnPassantTest]/[method:testConstructor()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.captureGenerator.DefaultCaptureEngineTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.captureGenerator.DefaultCaptureEngineTest]/[method:test()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:avoidCheckTrue()] (44 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.QueenTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.QueenTest]/[method:cloneTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.MoveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.MoveTest]/[method:testMoveWithPromotion()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:check()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.BishopTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.BishopTest]/[method:getImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getPlayIn()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.captureGenerator.ExplosiveCaptureEngineTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.captureGenerator.ExplosiveCaptureEngineTest]/[method:test()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.KingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.KingTest]/[method:cloneTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.HorseTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.HorseTest]/[method:getImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.RookTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.RookTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:getImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.ExplosiveCaptureTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.controller.MatchControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MatchControllerTest]/[method:isBlackTimeOver()] (86 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.BishopTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.BishopTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CaptureTest]/[method:testCapturedWithoutPromotion()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.MoveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.MoveTest]/[method:testClone()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CaptureTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CaptureTest]/[method:testCaptureWithPromotion()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PlayTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PlayTest]/[method:testConstructor()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.PieceTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PieceTest]/[method:testEquals()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.movements.DefaultPawnMovementTest]/[method:testGetPossiblePlays()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:getActivePlayer()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PromotionTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PromotionTest]/[method:testClone()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PlayTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PlayTest]/[method:execute()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.BishopTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.BishopTest]/[method:constructorTest()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.BishopTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.BishopTest]/[method:cloneTest()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.plays.CastlingTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.CastlingTest]/[method:execute()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchTest]/[method:cloneTest()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.RookTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.RookTest]/[method:constructorTest()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.HorseTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.HorseTest]/[method:constructorTest()] (0 ms)</li><li>com.ldts2223.chess.controller.PlayerControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.PlayerControllerTest]/[method:step()] (41 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:buildExplosive()] (1 ms)</li><li>com.ldts2223.chess.viewer.match.MatchViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.match.MatchViewerTest]/[method:drawElements()] (7 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.ruleEngine.RuleEngineTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.ruleEngine.RuleEngineTest]/[method:getPossiblePlays()] (5 ms)</li><li>com.ldts2223.chess.viewer.match.PlayViewerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.viewer.match.PlayViewerTest]/[method:drawCapture()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.player.UserTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.UserTest]/[method:testClone()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.gamemode.ExplosiveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.gamemode.ExplosiveTest]/[method:load()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.HorseTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.HorseTest]/[method:cloneTest()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.PromotionTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.PromotionTest]/[method:testExec()] (2 ms)</li><li>com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.player.bot.CaptureBotTest]/[method:selectNotPriorityPlay()] (2 ms)</li><li>com.ldts2223.chess.controller.MenuControllerTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.controller.MenuControllerTest]/[method:start()] (3 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:constructorTest()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.pieces.PawnTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.pieces.PawnTest]/[method:setImage()] (0 ms)</li><li>com.ldts2223.chess.model.game.match.MatchBuilderTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.MatchBuilderTest]/[method:testPlayerTypes()] (1 ms)</li><li>com.ldts2223.chess.model.game.match.plays.MoveTest.[engine:junit-jupiter]/[class:com.ldts2223.chess.model.game.match.plays.MoveTest]/[method:execute()] (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.9.4
+
+</body>
+</html>

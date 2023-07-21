@@ -1,22 +1,35 @@
 plugins {
     id 'java'
+    id 'application'
+    id 'info.solidsoft.pitest' version '1.9.0'
 }
 
 group 'com.ldts2223.chess'
-version '1.0-SNAPSHOT'
+version '1.0'
+
+application {
+    mainClass.set('com.ldts2223.chess.Game')
+}
 
 repositories {
     mavenCentral()
 }
 
+pitest {
+    junit5PluginVersion = '1.0.0'
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.6.0'
-
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
     testImplementation 'org.mockito:mockito-core:3.7.7'
+    testImplementation 'net.jqwik:jqwik:1.5.1'
+
     implementation group: 'com.googlecode.lanterna', name: 'lanterna', version: '3.1.1'
 }
 
 test {
-    useJUnitPlatform()
+    useJUnitPlatform {
+        includeEngines('junit-jupiter', 'jqwik')
+    }
 }

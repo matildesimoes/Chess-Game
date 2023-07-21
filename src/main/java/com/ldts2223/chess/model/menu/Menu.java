@@ -1,15 +1,21 @@
 package com.ldts2223.chess.model.menu;
 
-import java.util.Arrays;
 import java.util.List;
 
 public abstract class Menu {
 
+    private String title;
     private List<String> entries;
-    private int currentEntry = 0;
+    private int selectedEntry = -1;
+    private int entryX = 6;
+    private int entryY = 6;
 
-    public Menu() {
-        this.setEntries(Arrays.asList("Start", "Change Game Settings", "Exit"));
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public void setEntries(List<String> entries) {
@@ -24,7 +30,23 @@ public abstract class Menu {
         return entries.get(i);
     }
 
+    public void setEntryX(int entryX) {
+        this.entryX = entryX;
+    }
+
+    public void setSelectedEntry(int selectedEntry) {
+        this.selectedEntry = selectedEntry;
+    }
+
     public Boolean isSelected(int i){
-        return i == currentEntry;
+        return i == selectedEntry;
+    }
+
+    public int getEntryX() {
+        return entryX;
+    }
+
+    public int getEntryY() {
+        return entryY;
     }
 }
